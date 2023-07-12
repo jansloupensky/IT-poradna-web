@@ -3,7 +3,7 @@ body{
   background-size: 100%;
   background-repeat: no-repeat;
   background-color: black;
-
+  margin: 0;
 }
 #logo-div{
   margin-left: 10px;
@@ -105,12 +105,29 @@ body{
   margin-right: 5%;
 }
 
-#second-background{
+.second-background{
   background-image: url(images/Rectangle\ 3.png);
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+
+
+.ending-div{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+#safety-text-div{
+  margin-top: 130px;
+  margin-bottom: 130px;
 }
 
 @media (max-width: 700px){
@@ -163,8 +180,12 @@ body{
     font-size: 20px;
   }
 
-  #second-background{
-    height: 100%;
+  #safety-text-div{
+    margin-top: 70px;
+  }
+
+  .ending-div{
+    padding: 0;
   }
   
 }
