@@ -67,7 +67,7 @@ body{
   gap: 50px;
 }
 
-#help-button{
+.help-button{
   font-family: Arial, Helvetica, sans-serif;
   width: 326px;
   height: 96px;
@@ -76,7 +76,7 @@ body{
   border-style: none;
 }
 
-#help-button:hover{
+.help-button:hover{
   cursor: pointer;
   transition: 0.4s;
   background-color: rgb(191, 191, 191);
@@ -123,11 +123,48 @@ body{
   text-align: center;
 }
 
+.ending-title{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 43px;
+}
+
+.ending-text{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+
+
+
+.send-email-button{
+  font-family: Arial, Helvetica, sans-serif;
+  width: 326px;
+  height: 96px;
+  font-size: 35px;
+  border-radius: 20px;
+  border-style: none;
+}
+
+.send-email-button:hover{
+  cursor: pointer;
+  transition: 0.4s;
+  background-color: rgb(191, 191, 191);
+}
+
+.button-div{
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
 
 
 #safety-text-div{
   margin-top: 130px;
   margin-bottom: 130px;
+ 
 }
 
 @media (max-width: 700px){
@@ -162,7 +199,7 @@ body{
     gap: 30px;
   }
 
-  #help-button{
+  .help-button{
     width: 200px;
     height: 70px;
     font-size: 20px;
@@ -186,6 +223,24 @@ body{
 
   .ending-div{
     padding: 0;
+  }
+
+  .ending-title{
+    font-size: 19px;
+  }
+
+  .ending-text{
+    font-size: 13px;
+  }
+
+  .send-email-button{
+    width: 200px;
+    height: 70px;
+    font-size: 20px;
+  }
+
+  .button-div{
+    margin-top: 40px;
   }
   
 }
