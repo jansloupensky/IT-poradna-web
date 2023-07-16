@@ -296,4 +296,8 @@ body{
     min-height: 250px;
   }
   
+  #QR{
+    align-items: center;
+    margin-top: 30px;
+  }
 }
