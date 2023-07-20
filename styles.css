@@ -255,6 +255,7 @@
 
 
 
+
 @media (max-width: 995px){
   #logo-div{
     margin-left: 0;
@@ -355,4 +356,8 @@
     margin-left: 50px;
   }
   
+  #QR{
+    align-items: center;
+    margin-top: 30px;
+  }
 }
