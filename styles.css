@@ -99,6 +99,7 @@
 
 .second-background{
   background-image: url(images/Rectangle\ 3.png);
+  background-repeat: no-repeat;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -162,12 +163,20 @@
 .prices{
   display: flex;
   justify-content: space-around;
+  background-color: #2B2B2B;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 50px;
+  padding-left: 50px;
+  border-radius: 15px;
 }
 
 .service{
   border-style: solid;
-  
-  border-color: rgb(77, 82, 86);
+  background-color: black;
+  border-color: white;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -255,9 +264,25 @@
   align-items: center;
 }
 
+.qr-div{
+  background-image: url(images/macOS-Monterey-wallpaper-Light\ 1.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  gap: 20px;
+}
+
+.qr-text{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
 
 
-@media (max-width: 995px){
+
+@media screen and (max-width: 995px){
   #logo-div{
     margin-left: 0;
   }
@@ -278,7 +303,7 @@
     padding: 5px;
     border-radius: 10px;
     flex-shrink: 1;
-    
+    border-radius: 7px;
   }
   #first-text{
     font-size: 30px;  
@@ -336,11 +361,15 @@
   .prices{
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 25px;
+    margin: 25px;
+    
+
   }
 
   .service{
     min-height: 250px;
+    
   }
 
 
@@ -355,6 +384,14 @@
 
   .icons{
     margin-left: 50px;
+  }
+
+  .qr{
+    width: 300px;
+  }
+
+  .qr-text{
+    font-size: 20px;
   }
   
 }
