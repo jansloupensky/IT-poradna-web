@@ -98,7 +98,7 @@
 }
 
 .second-background{
-  background-image: url(images/Rectangle\ 3.png);
+  background-color: black;
   background-repeat: no-repeat;
   height: 100%;
   display: flex;
@@ -212,6 +212,7 @@
 .question-div{
   display: flex;
   justify-content: center;
+ 
 }
 
 .email-info{
@@ -274,7 +275,7 @@
 }
 
 .qr-text{
-  color: white;
+  color: black;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 40px;
   text-align: center;
@@ -395,3 +396,5 @@
   }
   
 }
+
+
