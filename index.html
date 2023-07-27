@@ -28,7 +28,7 @@
     <div id="buttons">
       <a href=""><button style="background-color: rgb(47, 47, 47);" class="button">Úvod</button></a>
       <a href="about-us.html"><button class="button" id="o nas">O nás</button></a>
-      <a href="contacts.html"><button class="button" id="kontakt1">Kontakty</button></a>
+      <a href="contacts.html"><button class="button" id="kontakt">Kontakty</button></a>
     </div>
   </div>
 
@@ -90,20 +90,24 @@
 
   <!----------------------------ZAŠLETE NÁM RYCHLÝ DOTAZ---------------------------------->
 
-  <div  style="margin-top: 100px;">
-    <h1 class="title">Zašlete nám rychlý dotaz</h1>
-    <div class="question-div">
-      <div class="email-info">
-        <input class="input name-input" id="name" type="text" placeholder="Jméno">
-        <input class="input surname-input" id="name2" type="text" placeholder="Přijmení">
-        <input class="input email-input" type="text" id="email" placeholder="E-mail">
-        <input class="input mamzajem-input" type="text" id="list" placeholder="Mám zájem o">
-        <input class="input message-input" type="text" id="message" placeholder="Zpráva" >
-        <button class="send-button">Odeslat</button>
-        <div class="icons"><a href="https://www.instagram.com/fit__poradna/" target="_blank"><img src="images/icons8-instagram-50.png" alt=""></a><a href="https://www.facebook.com/profile.php?id=100089091056838" target="_blank"><img src="images/icons8-facebook-50 (1).png" alt=""></a></div>
+  <form action="https://formspree.io/f/mknlowzo" method="POST">
+    <div  style="margin-top: 100px;">
+      <h1 class="title">Zašlete nám rychlý dotaz</h1>
+      <div class="question-div">
+        <div class="email-info">
+          <input class="input name-input" name="Jméno" type="text" placeholder="Jméno" required>
+          <input class="input surname-input" name="Přijmení" type="text" placeholder="Přijmení" required>
+          <input class="input email-input" type="email" name="E-mail" placeholder="E-mail" required>
+          <input class="input mamzajem-input" type="text" name="Mám zájem o" placeholder="Mám zájem o" required>
+          <textarea class="input message-input" name="Zpráva" cols="40" rows="5" placeholder="Zpráva" required></textarea>
+          <button class="send-button" type="submit">Odeslat</button>
+          <div class="icons"><a href="https://www.instagram.com/fit__poradna/" target="_blank"><img src="images/icons8-instagram-50.png" alt=""></a><a href="https://www.facebook.com/profile.php?id=100089091056838" target="_blank"><img src="images/icons8-facebook-50 (1).png" alt=""></a></div>
+        </div>
       </div>
     </div>
-  </div>
+  </form>
+
+  <!--------------------------------------QR KÓD------------------------------------->
 
   <div class="qr-div">
     <h1 class="qr-text">Platba za naše služby probíhá prostřednictvím platby přes QR kód</h1>
@@ -111,6 +115,8 @@
     <h1 class="qr-text">Pokud nechcete použít QR kód, můžete zaslat platbu na následující číslo účtu:</h1>
     <h1 class="qr-text">2025296070/3030</h1>
   </div>
+
+  <!-------------------------------------SPODNÍ PANEL-------------------------->
 
   <div  class="ending-div">
     <h1 style="color: black; margin: 0; margin-top: 20px;" class="ending-title">Pokud nás budete chtít podpořit, řekněte o našem projektu vašim znamým.</h1>
@@ -127,7 +133,10 @@
             window.scrollBy(0, 2200);
         });
     });
-</script>
+  </script>
+
+  
+
 
 </body>
 </html>
