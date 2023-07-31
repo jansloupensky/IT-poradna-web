@@ -291,6 +291,19 @@
   text-align: center;
 }
 
+#copy-button{
+  background-image: url(images/image\ 1.png);
+  height: 32px;
+  width: 34px;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  border: none;
+}
+
+#copy-button:hover{
+  cursor: pointer;
+}
+
 
 
 @media screen and (max-width: 995px){

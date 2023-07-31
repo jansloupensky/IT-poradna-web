@@ -38,7 +38,7 @@
     <p class="text">Aby byla komunikace s vámi přehledná a lehká, napište nám na email <span style="font-weight: 700;">poradna.it@gmail.com</span> nebo přes chat na našich sociálních sítích. Zde vám odpoví jeden z našich kolegů. Jakmile to bude možné, odepíšeme vám a pokusíme se pomoci.</p>
     <p class="text">Telefonní spojení je možné po předchozí dohodě s jedním z našich specialistů.</p>
     <div class="button-div">
-      <button class="send-email-button">Napište nám e-mail</button>
+      <a href="mailto:poradna.it@gmail.com"><button id="scrl-btn" class="send-email-button">Napište nám e-mail</button></a>
     </div>
   </div>
 
@@ -48,6 +48,15 @@
     <h1 style="color: black; margin: 0; margin-top: 20px;" class="ending-title">Pokud nás budete chtít podpořit, řekněte o našem projektu vašim znamým.</h1>
     <p style="color: black; margin-top: 10;" class="ending-text">Tím pomůžete třeba jim s nějakým problémem, ale i nám s rozvojem našeho projetku.</p>
   </div>
+
+  <script>
+    const scrollToDivBtn = document.getElementById('scrl-btn');
+    
+    scrollToDivBtn.addEventListener('click', function() {
+      const targetDiv = document.getElementById('email-form'); // Zde určte ID cílového divu
+      targetDiv.scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
   
 </body>
 </html>
