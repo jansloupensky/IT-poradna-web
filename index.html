@@ -36,7 +36,7 @@
 
   <div id="main-page">
     <div id="first-text">Pokud potřebujete pomoct s něčím v IT, neváhejte se na nás obrátit.</div>
-    <button class="help-button">Chci pomoct</button>
+    <button id="scroll-button" class="help-button">Chci pomoct</button>
     
   </div>
 
@@ -91,7 +91,7 @@
   <!----------------------------ZAŠLETE NÁM RYCHLÝ DOTAZ---------------------------------->
 
   <form action="https://formspree.io/f/mqkvekqd" method="POST">
-    <div class="email-div">
+    <div id="email-form" class="email-div">
       <h1 class="title" style="color: black;">Zašlete nám rychlý dotaz</h1>
       <div class="question-div">
         <div class="email-info">
@@ -125,15 +125,14 @@
 
     <!----------------------------scroll---------------------------------->
 
-  <script>
+    <script>
+      const scrollToDivBtn = document.getElementById('scroll-button');
     
-    document.addEventListener("DOMContentLoaded", function () {
-        var helpButton = document.querySelector(".help-button");
-        helpButton.addEventListener("click", function () {
-            window.scrollBy(0, 2200);
-        });
-    });
-  </script>
+      scrollToDivBtn.addEventListener('click', function() {
+        const targetDiv = document.getElementById('email-form'); // Zde určte ID cílového divu
+        targetDiv.scrollIntoView({ behavior: 'smooth' });
+      });
+    </script>
 
   
 
