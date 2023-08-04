@@ -271,8 +271,8 @@
 
 .icons{
   display: flex;
-  margin-left: 100px;
-  align-items: center;
+  margin-left: 95px;
+  gap: 5px;
 }
 
 .qr-div{
@@ -407,7 +407,7 @@
   }
 
   .icons{
-    margin-left: 50px;
+    margin-left: 45px;
   }
 
   .qr{
