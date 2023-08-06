@@ -272,6 +272,7 @@
 .icons{
   display: flex;
   margin-left: 95px;
+  margin-right: 50px;
   gap: 5px;
 }
 
