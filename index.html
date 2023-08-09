@@ -25,6 +25,8 @@
 </head>
 <body>
 
+
+  
   
 
   <style>
@@ -42,12 +44,26 @@
     <div id="logo-div">
       <a href="index.html"><img id="logo" src="logo.png" alt=""></a>
     </div>
+
+    
       
     <div id="buttons">
       <a href=""><button style="background-color: rgb(47, 47, 47);" class="button">Úvod</button></a>
-      <a href="about-us.html"><button class="button" id="o nas">O nás</button></a>
+      <a href="about-us.html"><button class="button o-nas" id="o nas">O nás</button></a>
       <a href="contacts.html"><button class="button" id="kontakt">Kontakty</button></a>
+      <a href="en.html"><button class="language">EN</button></a>
     </div>
+
+    <div class="dropdown">
+      <button class="dropbtn" id="dropdownBtn">MENU</button>
+      <div class="dropdown-content" id="dropdownContent">
+          <a href="index.html">Úvod</a>
+          <a href="about-us.html">O nás</a>
+          <a href="contacts.html">Kontakty</a>
+      </div>
+      <a href="en.html"><button class="language">EN</button></a>
+    </div>
+    
   </div>
 
 <!------------------------------------ÚVODNÍ ČÁST WEBU-------------------------------->
@@ -183,6 +199,43 @@
         alert("Text byl zkopírován do schránky!");
       });
     };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  //--------------------------MENU-----------------------------
+
+    document.addEventListener("DOMContentLoaded", function() {
+    var dropdownBtn = document.getElementById("dropdownBtn");
+    var dropdownContent = document.getElementById("dropdownContent");
+
+    dropdownBtn.addEventListener("click", function() {
+        if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+        } else {
+            dropdownContent.style.display = "block";
+        }
+    });
+});
     </script>
 
   
