@@ -7,14 +7,17 @@
   background-color: black;
   color: white;
   padding: 10px;
-  border: none;
+  border:rgb(89, 89, 89);
+  border-style: solid;
   cursor: pointer;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 10px;
+  transition: 0.3s;
 }
 
 .dropbtn:hover{
   background-color: rgb(66, 66, 66);
+  transition: 0.3s;
 }
 
 /* Styly pro obsah dropdown menu */
@@ -73,8 +76,8 @@
 }
 
 .language{
-  width: 45px;
-  height: 35px;
+  width: 48px;
+  height: 41px;
   border-radius: 10px;
   border: none;
   padding: 0;
@@ -82,6 +85,7 @@
   font-weight: bold;
   text-align: center;
   margin-left: 20px;
+  transition: 0.3s;
 }
 .language:hover{
   cursor: pointer;
@@ -96,10 +100,13 @@
   background-color: black;
   font-size: 25px;
   color: white;
-  border-style: none;
+  border:rgb(89, 89, 89);
+  border-style: solid;
+  border-width: 3px;
   padding: 5px;
-  border-radius: 10px;
+  border-radius: 7px;
   flex-shrink: 1;
+  transition: 0.4s;
 }
 
 
@@ -134,12 +141,14 @@
   font-size: 35px;
   border-radius: 20px;
   border-style: none;
+  transition: 0.4s;
 }
 
 .help-button:hover{
   cursor: pointer;
   transition: 0.4s;
-  background-color: rgb(191, 191, 191);
+  background-color: rgb(123, 122, 122);
+  color: white;
 }
 
 #title-text{
@@ -206,6 +215,7 @@
   font-size: 35px;
   border-radius: 20px;
   border-style: none;
+  transition: 0.4s;
 }
 
 .send-email-button:hover{
@@ -329,6 +339,7 @@
   font-size: 20px;
   border-radius: 15px;
   border-style: none;
+  transition: 0.4s;
 }
 
 .send-button:hover{
@@ -389,9 +400,6 @@
 
   #buttons{
     display: none;
-    flex-shrink: 1;
-    margin-right: 0;
-    gap: 5px;
   }
 
   
@@ -485,7 +493,7 @@
     grid-template-columns: 150px 150px;
     grid-template-rows: 50px 50px 50px 150px 60px;
     gap: 10px;
-    padding: 25px;
+    padding: 4%;
   }
 
   .icons{
@@ -498,6 +506,10 @@
 
   .qr-text{
     font-size: 20px;
+  }
+
+  .language{
+    margin-left: 10px;
   }
   
 }
