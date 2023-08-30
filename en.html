@@ -105,7 +105,7 @@
     </div>
     <div class="service">
       <p class="service-text">A problem that takes more than 30 minutes to solve</p>
-      <p style="margin: 0;" class=" service-text">Obsahuje:</p>
+      <p style="margin: 0;" class=" service-text">For example:</p>
       <ul>
         <li class="service-text">Online consultation</li>
         <li class="service-text">Solving complex problems</li>
@@ -119,8 +119,6 @@
       <ul>
         <li class="service-text">Website redesign</li>
         <li class="service-text">Network settings</li>
-        <li class="service-text">Repair at your home
-        </li>
         <li class="service-text">Smart home</li>
       </ul>
       <button style="width: 150px; font-size: 15px;" class="price-text">Price by agreement</button>
@@ -157,10 +155,11 @@
   <!--------------------------------------QR KÓD------------------------------------->
 
   <div class="qr-div">
-    <h1 class="qr-text">Payment for our services is made via QR code payment</h1>
-    <img style="border-radius: 25px;" class="qr"  src="IMG_0759.JPG" alt="">
-    <h1 class="qr-text">If you do not want to use the QR code, you can send the payment to the following account number:</h1>
-    <h1 class="qr-text">2025296070/3030 <button id="copy-button"></button></h1>
+    <h1 style="font-size: 30px;" class="qr-text">PAYMENT FOR OUR SERVICES</h1>
+    <h2 class="qr-text">Owner: Jan Sloupenský <button class="copy-button" id="OWNER-copy"></button></h1>
+    <h2 class="qr-text">BIC/SWIFT: AIRACZPP <button class="copy-button" id="BIC-copy"></button></h1>
+    <h2 class="qr-text">IBAN: CZ8130300000002025296070 <button class="copy-button" id="IBAN-copy"></button></h1>
+    <h2 class="qr-text">Bank account number: 2025296070/3030 <button class="copy-button" id="BAN-copy"></button></h1>
   </div>
 
   <!-------------------------------------SPODNÍ PANEL-------------------------->
@@ -170,9 +169,11 @@
     <p style="color: black; margin-top: 10;" class="ending-text">Tím pomůžete třeba jim s nějakým problémem, ale i nám s rozvojem našeho projetku.</p>
   </footer>
 
-    <!----------------------------scroll---------------------------------->
+    <!----------------------------JAVA SCRIPT---------------------------------->
 
     <script>
+
+      //-----------------------------------------------SCROLL---------------------------------------------------------
       const scrollToDivBtn = document.getElementById('scroll-button');
     
       scrollToDivBtn.addEventListener('click', function() {
@@ -180,18 +181,54 @@
         targetDiv.scrollIntoView({ behavior: 'smooth' });
       });
 
+      //----------------------------------------------KOPÍROVÁNÍ TEXTU----------------------------------------------------
 
-      function zkopirovatText(text) {
+      function zkopirovatText(text) 
+      {
       const textarea = document.createElement("textarea");
       textarea.value = text;
       document.body.appendChild(textarea);
       textarea.select();
       document.execCommand("copy");
       document.body.removeChild(textarea);
-    }
+      }
 
-    window.onload = function() {
-      const kopirovatTlacitko = document.getElementById("copy-button");
+    window.onload = function() 
+    {
+      const kopirovatTlacitko = document.getElementById("OWNER-copy");
+      const definovanyText = "Jan Sloupenský";
+
+      kopirovatTlacitko.addEventListener("click", function() {
+        zkopirovatText(definovanyText);
+        alert("The text was copied to the clipboard!");
+      });
+    };
+
+    window.onload = function() 
+    {
+      const kopirovatTlacitko = document.getElementById("BIC-copy");
+      const definovanyText = "AIRACZPP";
+
+      kopirovatTlacitko.addEventListener("click", function() {
+        zkopirovatText(definovanyText);
+        alert("The text was copied to the clipboard!");
+      });
+    };
+
+    window.onload = function() 
+    {
+      const kopirovatTlacitko = document.getElementById("IBAN-copy");
+      const definovanyText = "CZ8130300000002025296070";
+
+      kopirovatTlacitko.addEventListener("click", function() {
+        zkopirovatText(definovanyText);
+        alert("The text was copied to the clipboard!");
+      });
+    };
+
+    window.onload = function() 
+    {
+      const kopirovatTlacitko = document.getElementById("BAN-copy");
       const definovanyText = "2025296070/3030";
 
       kopirovatTlacitko.addEventListener("click", function() {
@@ -200,13 +237,14 @@
       });
     };
 
+    
 
 
 
 
 
 
-    //---------------------------MENU-----------------------------
+    //---------------------------------------------------------MENU--------------------------------------------------------
     document.addEventListener("DOMContentLoaded", function() {
     var dropdownBtn = document.getElementById("dropdownBtn");
     var dropdownContent = document.getElementById("dropdownContent");
