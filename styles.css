@@ -352,6 +352,10 @@
   gap: 5px;
 }
 
+.icon{
+  width: 50px;
+}
+
 .qr-div{
   
   display: flex;
