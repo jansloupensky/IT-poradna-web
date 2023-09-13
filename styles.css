@@ -99,7 +99,7 @@
   background-color: black;
   font-size: 25px;
   color: white;
-  border-style: solid;
+  border-style: none;
   padding: 5px;
   border-radius: 7px;
   flex-shrink: 1;
