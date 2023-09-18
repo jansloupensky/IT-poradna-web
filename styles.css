@@ -387,6 +387,57 @@
 
 
 
+.reference-div{
+  display: flex;
+  flex-direction: column;
+  
+  margin-left: 50px;
+}
+
+.reference-nadpis{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.reference-popis{
+  margin-left: 30px; 
+  width: 350px;
+}
+
+.reference-text{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.reference-images{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.reference-img{
+  background-image: url(hodinky-1.jpg);
+  border-radius: 20px;
+  width: 400px;
+  height: 400px;
+  transition: 0.3s;
+  background-size: 100%;
+  display: flex;
+}
+
+.reference-img:hover{
+  background-image: url(hodinky-3.jpg);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+
+
+
+
+
 @media screen and (max-width: 995px){
 
   .dropdown{
@@ -512,6 +563,32 @@
   .language{
     margin-left: 10px;
   }
+
+
+
+  .reference-div{
+    margin-left: 10px;
+    align-items: center;
+  }
+
+  .reference-images{
+    flex-direction: column;
+    width: 75%;
+    align-items: center;
+  }
+
+  .reference-img{
+    width: 75%;
+    background-repeat: no-repeat;
+    margin: 0;
+  }
+
+  .reference-popis{
+    margin-left: 0;
+    width: 100%;
+  }
+  
+
   
 }
 
