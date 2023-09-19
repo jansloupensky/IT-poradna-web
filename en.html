@@ -100,6 +100,7 @@
       <p style="margin: 0;" class=" service-text">For example:</p>
       <ul>
         <li class="service-text">Help with choosing a new device</li>
+        <li class="service-text">Answer to your question</li>
       </ul>
       <button class="price-text">6 EUR</button>
     </div>
@@ -107,9 +108,9 @@
       <p class="service-text_tittle">Advanced IT support</p>
       <p style="margin: 0;" class=" service-text">For example:</p>
       <ul>
-        <li class="service-text">Online consultation</li>
-        <li class="service-text">Solving complex problems</li>
+        <li class="service-text">Device repair Hardware/Software</li>
         <li class="service-text">Help with setting up a new device</li>
+        <li class="service-text">Basic network settings</li>
       </ul>
       <button class="price-text">8 EUR</button>
     </div>
@@ -118,13 +119,15 @@
       <p style="margin: 0;" class=" service-text">For example:</p>
       <ul>
         <li class="service-text">Website redesign</li>
-        <li class="service-text">Network settings</li>
+        <li class="service-text">Construction of the network</li>
         <li class="service-text">Smart home</li>
       </ul>
       <button style="width: 150px; font-size: 15px;" class="price-text">Price by agreement</button>
     </div>
   </div>
   <p class="text_podminky">The price is calculated for every 30 minutes counted.</p>
+  <p class="text_podminky">If you do not know what price category you need please do not be afraid to contact us.</p>
+
 
   <!---------------------------------------ZAŠLETE NÁM RYCHLÝ DOTAZ--------------------------------------->
 
@@ -157,7 +160,7 @@
 
   <div class="qr-div">
     <h1 style="font-size: 30px;" class="qr-text">PAYMENT FOR OUR SERVICES</h1>
-    <h2 class="qr-text">Owner: Jan Sloupenský <button class="copy-button" id="OWNER-copy"></button></h2>
+    <h2 class="qr-text">Owner: Jan Sloupenský <button class="copy-button" id="OWNER-copy1"></button></h2>
     <h2 class="qr-text">BIC/SWIFT: AIRACZPP <button class="copy-button" id="BIC-copy"></button></h2>
     <h2 class="qr-text">IBAN: CZ8130300000002025296070 <button class="copy-button" id="IBAN-copy"></button></h2>
     <h2 class="qr-text">Bank account number: 2025296070/3030 <button class="copy-button" id="BAN-copy"></button></h2>
@@ -206,37 +209,42 @@
     };
 
     window.onload = function() 
-    {
-      const kopirovatTlacitko = document.getElementById("BIC-copy");
-      const definovanyText = "AIRACZPP";
+{
+  const kopirovatTlacitko1 = document.getElementById("BIC-copy");
+  const definovanyText1 = "AIRACZPP";
 
-      kopirovatTlacitko.addEventListener("click", function() {
-        zkopirovatText(definovanyText);
-        alert("The text was copied to the clipboard!");
-      });
-    };
+  kopirovatTlacitko1.addEventListener("click", function() {
+    zkopirovatText(definovanyText1);
+    alert("The text was copied to the clipboard!");
+  });
 
-    window.onload = function() 
-    {
-      const kopirovatTlacitko = document.getElementById("IBAN-copy");
-      const definovanyText = "CZ8130300000002025296070";
+  const kopirovatTlacitko2 = document.getElementById("IBAN-copy");
+  const definovanyText2 = "CZ8130300000002025296070";
 
-      kopirovatTlacitko.addEventListener("click", function() {
-        zkopirovatText(definovanyText);
-        alert("The text was copied to the clipboard!");
-      });
-    };
+  kopirovatTlacitko2.addEventListener("click", function() {
+    zkopirovatText(definovanyText2);
+    alert("The text was copied to the clipboard!");
+  });
 
-    window.onload = function() 
-    {
-      const kopirovatTlacitko = document.getElementById("BAN-copy");
-      const definovanyText = "2025296070/3030";
+  const kopirovatTlacitko3 = document.getElementById("BAN-copy");
+  const definovanyText3 = "2025296070/3030";
 
-      kopirovatTlacitko.addEventListener("click", function() {
-        zkopirovatText(definovanyText);
-        alert("The text was copied to the clipboard!");
-      });
-    };
+  kopirovatTlacitko3.addEventListener("click", function() {
+    zkopirovatText(definovanyText3);
+    alert("The text was copied to the clipboard!");
+
+  });
+
+  const kopirovatTlacitko4 = document.getElementById("OWNER-copy1");
+  const definovanyText4 = "Jan Sloupenský";
+
+  kopirovatTlacitko4.addEventListener("click", function() {
+    zkopirovatText(definovanyText4);
+    alert("The text was copied to the clipboard!");
+  });
+
+};
+
 
     
 
