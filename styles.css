@@ -238,7 +238,7 @@
 
 .email-div{
   margin-top: 100px;
-  background-image: url(backround.png);
+  background-image: url(macOS-Monterey-wallpaper-Light\ 1.png);
   padding-top: 1px;
   padding-bottom: 20px;
 }
@@ -421,7 +421,7 @@
 .reference-div{
   display: flex;
   flex-direction: column;
-  
+  align-items: center;
   margin-left: 50px;
 }
 
@@ -429,13 +429,11 @@
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
-font-size: 30px;
+  font-size: 30px;
+  margin-bottom: 50px;
 }
 
-.reference-popis{
-  margin-left: 30px; 
-  width: 350px;
-}
+
 
 .reference-text{
   color: white;
@@ -448,16 +446,27 @@ font-size: 30px;
 }
 
 .reference-images{
-  display: flex;
-  flex-direction: row;
-  
+  display: grid;
+  grid-template-columns: 500px 500px;
+  grid-template-rows: 500px 500px;
+  gap: 70px;
 }
 
 .reference-img{
   background-image: url(hodinky-1.jpg);
   border-radius: 20px;
-  width: 400px;
-  height: 400px;
+  width: 100%;
+  height: 100%;
+  transition: background-image 0.5s ease;
+  background-size: 100%;
+  display: flex;
+}
+
+.reference-img2{
+  background-image: url(hodinky-3.jpg);
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
   transition: background-image 0.5s ease;
   background-size: 100%;
   display: flex;
@@ -479,10 +488,17 @@ font-size: 30px;
   display: flex;
 }
 
+@media screen and (max-width: 1200px){
+  .reference-images{
+    display: grid;
+    grid-template-columns: 450px 450px;
+    grid-template-rows: 450px 450px;
+    gap: 70px;
+  }
+}
 
 
-
-@media screen and (max-width: 995px){
+@media screen and (max-width: 1000px){
 
   .dropdown{
     display: block;
@@ -611,34 +627,43 @@ font-size: 30px;
 
 
   .reference-div{
-    margin-left: 10px;
-    align-items: center;
+    margin: 0px;
+    
   }
 
   .reference-images{
+    display: flex;
     flex-direction: column;
     width: 75%;
     align-items: center;
   }
 
-  .reference-img{
-    width: 75%;
-    background-repeat: no-repeat;
-    margin: 0;
+  .reference-img, .reference-img2{
+    width: 350px;
+    height: 350px;
   }
 
-  .reference-popis{
-    margin-left: 0;
-    width: 100%;
+  .reference-text{
+    font-size: 18px;
+    
   }
-  
+
 
   
 }
+
+
 
 @media screen and (max-width: 450px){
   #logo-div{
     width: 200px;
   }
+
+  .reference-img, .reference-img2{
+    width: 250px;
+    height: 250px;
+  }
+
+ 
 
 }
