@@ -238,7 +238,8 @@
 
 .email-div{
   margin-top: 100px;
-  background-image: url(macOS-Monterey-wallpaper-Light\ 1.png);
+  background-image: url(images/question-background.jpg);
+  background-size: 100%;
   padding-top: 1px;
   padding-bottom: 20px;
 }
@@ -467,15 +468,14 @@
   border-radius: 20px;
   width: 100%;
   height: 100%;
-  transition: background-image 0.5s ease;
+  transition: background-image 0.3s ease;
   background-size: 100%;
   display: flex;
 }
 
 .reference-img:hover{
   background-image: url(hodinky-2.jpg);
-  transition: background-image 0.5s ease;
-  cursor: pointer;
+  transition: background-image 0.3s ease;
 }
 
 .IMG2{
