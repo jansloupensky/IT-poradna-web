@@ -443,6 +443,11 @@
 
 
 .reference-div{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.reference-column{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -608,10 +613,8 @@
   }
 
 
-
-  .reference-images{
-    grid-template-columns: 400px;
-    grid-template-rows: 400px;
+  .reference-div{
+    grid-template-columns: 100%;
   }
 
 
