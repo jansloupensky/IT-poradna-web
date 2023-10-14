@@ -172,16 +172,7 @@
   
 }
 
-.contacts-title{
-  color: rgb(0, 0, 0);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 45px;
-  margin-left: 5%;
-  background: rgba(255, 255, 255, 0.603);
-  padding: 10px;
-  border-radius: 10px;
-  width: 35%;
-}
+
 
 .text{
   color: rgb(255, 255, 255);
@@ -192,49 +183,18 @@
 
 }
 
-.contacts-text{
-  color: rgb(0, 0, 0);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 28px;
-  margin-left: 5%;
-  margin-right: 5%;
-  background: rgba(255, 255, 255, 0.603);
-  padding: 10px;
-  border-radius: 10px;
-  
-
+.contacts-text-div{
+  padding: 0px;
+  background-color: rgb(29, 174, 252);
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 20px;
 }
 
-.contacts-text-short{
-  color: rgb(0, 0, 0);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 28px;
-  margin-left: 5%;
-  margin-right: 5%;
-  background: rgba(255, 255, 255, 0.603);
-  padding: 10px;
-  border-radius: 10px;
-  width: 68%;
-  
-  
-
-}
-
-
-.contacts-text-short-en{
-  color: rgb(0, 0, 0);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 28px;
-  margin-left: 5%;
-  margin-right: 5%;
-  background: rgba(255, 255, 255, 0.603);
-  padding: 10px;
-  border-radius: 10px;
-  width: 71%;
-  
-  
-
-}
 
 .second-background{
   background-color: black;
@@ -475,11 +435,17 @@
 
 
 
+.carousel-inner{
+  max-width: 500px;
+  max-height: 500px;
+  border-radius: 20px;
+}
+
+
 .reference-div{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 50px;
 }
 
 .reference-nadpis{
@@ -495,54 +461,24 @@
 .reference-text{
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 30px;
-  flex: 1;
-  
-  
-  
+  font-size: 20px;
 }
 
 .reference-images{
   display: grid;
-  grid-template-columns: 500px 500px;
-  grid-template-rows: 500px 500px;
-  gap: 70px;
-}
-
-.reference-img{
-  background-image: url(images/hodinky-1.jpg);
-  border-radius: 20px;
-  width: 100%;
-  height: 100%;
-  transition: background-image 0.5s ease;
-  background-size: 100%;
-  display: flex;
-}
-
-.reference-img2{
-  background-image: url(images/hodinky-3.jpg);
-  border-radius: 20px;
-  width: 100%;
-  height: 100%;
-  transition: background-image 0.3s ease;
-  background-size: 100%;
-  display: flex;
-}
-
-.reference-img:hover{
-  background-image: url(images/hodinky-2.jpg);
-  transition: background-image 0.3s ease;
+  grid-template-columns: 500px;
+  grid-template-rows: 500px;
+  gap: 20px;
 }
 
 
-@media screen and (max-width: 1200px){
-  .reference-images{
-    display: grid;
-    grid-template-columns: 450px 450px;
-    grid-template-rows: 450px 450px;
-    gap: 70px;
-  }
-}
+
+
+
+
+
+
+  
 
 
 @media screen and (max-width: 1000px){
@@ -673,22 +609,12 @@
 
 
 
-  .reference-div{
-    margin: 0px;
-    
-  }
-
   .reference-images{
-    display: flex;
-    flex-direction: column;
-    width: 75%;
-    align-items: center;
+    grid-template-columns: 400px;
+    grid-template-rows: 400px;
   }
 
-  .reference-img, .reference-img2{
-    width: 350px;
-    height: 350px;
-  }
+
 
   .reference-text{
     font-size: 18px;
@@ -706,9 +632,9 @@
     width: 200px;
   }
 
-  .reference-img, .reference-img2{
-    width: 250px;
-    height: 250px;
+  .reference-images{
+    grid-template-columns: 350px;
+    grid-template-rows: 350px;
   }
 
  
