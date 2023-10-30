@@ -160,7 +160,7 @@
 }
 
 #title-text{
-  margin-top: 280px;
+  margin-top: 150px;
   display: flex;
   flex-direction: column;
   padding-bottom: 80px;
@@ -183,6 +183,45 @@
   margin-left: 5%;
   margin-right: 5%;
 
+}
+
+.jak-to-funguje{
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+
+.jtf-krouzek{
+  display: flex;
+  background-color: orange;
+  border-radius: 100%;
+  height: 100px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.jtf-cast{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+.jtf-title{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.jtf-text{
+  font-size: 20px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .contacts-text-div{
