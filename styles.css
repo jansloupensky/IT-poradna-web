@@ -478,12 +478,14 @@
 .reference-div{
   display: grid;
   grid-template-columns: 50% 50%;
+  grid-auto-flow: row;
 }
 
 .reference-column{
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
 }
 
 .reference-nadpis{
