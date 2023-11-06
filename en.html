@@ -151,14 +151,13 @@
           </select>
           <textarea class="input message-input" name="Zpráva" id="message" cols="40" rows="5" placeholder="Message" required></textarea>
           <button class="send-button" id="send-button" type="submit">Send</button>
-          <div class="icons"><a href="https://www.instagram.com/fit__poradna/" target="_blank"><img class="icon" src="images/IG 128 px.png" alt=""></a><a href="https://www.facebook.com/profile.php?id=100089091056838" target="_blank"><img class="icon" src="images/FB 128 px.png" alt=""></a></div>
+          <div class="icons"><a href="https://www.instagram.com/it_poradna/" target="_blank"><img class="icon" src="images/IG 128 px.png" alt=""></a><a href="https://www.facebook.com/people/It-Poradna/100089091056838/" target="_blank"><img class="icon" src="images/FB 128 px.png" alt=""></a></div>
         </div>
       </div>
     </div>
   </form>
 
-  <!--------------------------------------QR KÓD------------------------------------->
-
+  
  
 
   <!-------------------------------------SPODNÍ PANEL-------------------------->
@@ -180,64 +179,7 @@
         targetDiv.scrollIntoView({ behavior: 'smooth' });
       });
 
-      //----------------------------------------------KOPÍROVÁNÍ TEXTU----------------------------------------------------
-
-      function zkopirovatText(text) 
-      {
-      const textarea = document.createElement("textarea");
-      textarea.value = text;
-      document.body.appendChild(textarea);
-      textarea.select();
-      document.execCommand("copy");
-      document.body.removeChild(textarea);
-      }
-
-    
-
-    window.onload = function() 
-    {
-      const kopirovatTlacitko1 = document.getElementById("BIC-copy");
-      const definovanyText1 = "AIRACZPP";
-
-      kopirovatTlacitko1.addEventListener("click", function() {
-        zkopirovatText(definovanyText1);
-        alert("The text was copied to the clipboard!");
-      });
-
-      const kopirovatTlacitko2 = document.getElementById("IBAN-copy");
-      const definovanyText2 = "CZ8130300000002025296070";
-
-      kopirovatTlacitko2.addEventListener("click", function() {
-        zkopirovatText(definovanyText2);
-        alert("The text was copied to the clipboard!");
-      });
-
-      const kopirovatTlacitko3 = document.getElementById("BAN-copy");
-      const definovanyText3 = "2025296070/3030";
-
-      kopirovatTlacitko3.addEventListener("click", function() {
-        zkopirovatText(definovanyText3);
-        alert("The text was copied to the clipboard!");
-
-      });
-
-      const kopirovatTlacitko4 = document.getElementById("OWNER-copy1");
-      const definovanyText4 = "Jan Sloupenský";
-
-      kopirovatTlacitko4.addEventListener("click", function() {
-        zkopirovatText(definovanyText4);
-        alert("The text was copied to the clipboard!");
-      });
-
-    };
-
-
-    
-
-
-
-
-
+      
 
     //---------------------------------------------------------MENU--------------------------------------------------------
     document.addEventListener("DOMContentLoaded", function() {
