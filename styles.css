@@ -325,6 +325,7 @@
 .email-div{
   margin-top: 100px;
   background-image: url(images/question-background.jpg);
+  background-repeat: no-repeat;
   background-size: 100%;
   padding-top: 1px;
   padding-bottom: 20px;
