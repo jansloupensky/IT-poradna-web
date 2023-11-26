@@ -15,7 +15,7 @@ function scrollToTop() {
 
   if (currentPosition > 0) {
       window.requestAnimationFrame(scrollToTop);
-      window.scrollTo(0, currentPosition - currentPosition / 30);
+      window.scrollTo(0, currentPosition - currentPosition / 20);
   }
 }
 
