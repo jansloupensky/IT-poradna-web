@@ -139,15 +139,6 @@
           <input class="input name-input" name="Jméno" id="name" type="text" placeholder="Name" required>
           <input class="input surname-input" name="Přijmení" id="name2" type="text" placeholder="Surname" required>
           <input class="input email-input" type="email" name="E-mail" id="email" placeholder="E-mail" required>
-          <select class="input mamzajem-input" type="text" name="Mám zájem o" placeholder="Mám zájem o" required>
-            <option value="-">I’m interested in :</option>
-            <option value="Konzultaci">Consultation</option>
-            <option value="Dotaz">Question</option>
-            <option value="Výběr hardwaru/softwaru">Hardware/software selection</option>
-            <option value="Nastavení počítače">Computer settings</option>
-            <option value="Vyřešení problému">Solving the problem</option>
-            <option value="Jiné">Different</option>
-          </select>
           <textarea class="input message-input" name="Zpráva" id="message" cols="40" rows="5" placeholder="Message" required></textarea>
           <button class="send-button" id="send-button" type="submit">Send</button>
           <div class="icons"><a href="https://www.instagram.com/it_poradna/" target="_blank"><img class="icon" src="images/IG 128 px.png" alt=""></a><a href="https://www.facebook.com/people/It-Poradna/100089091056838/" target="_blank"><img class="icon" src="images/FB 128 px.png" alt=""></a></div>
@@ -168,34 +159,9 @@
 
     <!----------------------------JAVA SCRIPT---------------------------------->
 
-    <script>
+  <script src="script.js"></script>
 
-      //-----------------------------------------------SCROLL---------------------------------------------------------
-      const scrollToDivBtn = document.getElementById('scroll-button');
-    
-      scrollToDivBtn.addEventListener('click', function() {
-        const targetDiv = document.getElementById('email-form'); // Zde určte ID cílového divu
-        targetDiv.scrollIntoView({ behavior: 'smooth' });
-      });
-
-      
-
-    //---------------------------------------------------------MENU--------------------------------------------------------
-    document.addEventListener("DOMContentLoaded", function() {
-    var dropdownBtn = document.getElementById("dropdownBtn");
-    var dropdownContent = document.getElementById("dropdownContent");
-
-    dropdownBtn.addEventListener("click", function() {
-        if (dropdownContent.style.display === "block") {
-            dropdownContent.style.display = "none";
-        } else {
-            dropdownContent.style.display = "block";
-        }
-    });
-});
-    </script>
-
-  
+  <div class="scroll-to-top" onclick="scrollToTop()"><span>&#8593;</span></div>
 
 
 </body>

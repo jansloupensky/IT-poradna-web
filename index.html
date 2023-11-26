@@ -3,6 +3,7 @@
 <head>
 
   <link rel="icon" href="images/ikona.png" type="image/x-icon">
+  <link rel="stylesheet" href="script.js">
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2882851951724784"
   crossorigin="anonymous"></script>
@@ -35,6 +36,7 @@
 </head>
 <body>
 
+  
   
   <style>
     body{
@@ -194,60 +196,11 @@
     <h1 style="color: black; margin: 0; margin-top: 20px;" class="ending-title">Pokud nás budete chtít podpořit, řekněte o našem projektu vašim znamým.</h1>
     <p style="color: black; margin-top: 10;" class="ending-text">Tím pomůžete třeba jim s nějakým problémem, ale i nám s rozvojem našeho projetku.</p>
   </footer>
+
+  <script src="script.js"></script>
   
 
-    <!----------------------------scroll---------------------------------->
-
-    <script>
-      const scrollToDivBtn = document.getElementById('scroll-button');
-    
-      scrollToDivBtn.addEventListener('click', function() {
-        const targetDiv = document.getElementById('email-form'); // Zde určte ID cílového divu
-        targetDiv.scrollIntoView({ behavior: 'smooth' });
-      });
-
-
-      function zkopirovatText(text) {
-      const textarea = document.createElement("textarea");
-      textarea.value = text;
-      document.body.appendChild(textarea);
-      textarea.select();
-      document.execCommand("copy");
-      document.body.removeChild(textarea);
-    }
-
-    window.onload = function() {
-      const kopirovatTlacitko = document.getElementById("copy-button");
-      const definovanyText = "2025296070/3030";
-
-      kopirovatTlacitko.addEventListener("click", function() {
-        zkopirovatText(definovanyText);
-        alert("Text byl zkopírován do schránky!");
-      });
-    };
-
-
-
-
-
-
-  //--------------------------MENU-----------------------------
-
-    document.addEventListener("DOMContentLoaded", function() {
-    var dropdownBtn = document.getElementById("dropdownBtn");
-    var dropdownContent = document.getElementById("dropdownContent");
-
-    dropdownBtn.addEventListener("click", function() {
-        if (dropdownContent.style.display === "block") {
-            dropdownContent.style.display = "none";
-        } else {
-            dropdownContent.style.display = "block";
-        }
-    });
-});
-    </script>
-
-  
+  <div class="scroll-to-top" onclick="scrollToTop()"><span>&#8593;</span></div>
 
 
 </body>
