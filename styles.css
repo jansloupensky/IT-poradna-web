@@ -30,8 +30,8 @@
 
 
 .dropdown {
-  margin-right: 30px;
   display: none;
+  z-index: 1;
 }
 
 .dropbtn {
@@ -87,6 +87,11 @@
 
 
 
+
+.network-img{
+  width: 45%;
+}
+
 #logo-div{
   margin-left: 15px;
   margin-top: 15px;
@@ -94,8 +99,8 @@
 }
 
 #logo{
-  width: 100%;
-  height: 100%;
+  width: 75%;
+  height: 75%;
   flex-shrink: 1;
 }
 
@@ -103,6 +108,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 
@@ -110,7 +117,6 @@
   display: flex;
   min-width: 200px;
   gap: 20px;
-  margin-right: 60px;
   flex-shrink: 1;
   height: 60px;
   justify-content: center;
@@ -139,7 +145,7 @@
 
 .button{
   background-color: rgb(41, 38, 38);
-  font-size: 25px;
+  font-size: 17px;
   color: white;
   border-style: none;
   padding: 5px;
@@ -162,9 +168,9 @@
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  margin-left: 25px;
-  margin-right: 25px;
-  font-size: 80px;  
+  margin-left: 15%;
+  margin-right: 15%;
+  
 
 }
 
@@ -172,19 +178,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 200px;
-  padding-bottom: 150px;
+  padding-top: 100px;
+  padding-bottom: 50px;
   background-color: rgb(246, 112, 0);
-  gap: 50px;
+  gap: 40px;
   width: 100%;
+  
 }
 
 .help-button{
   font-family: Arial, Helvetica, sans-serif;
   color: white;
-  width: 326px;
-  height: 96px;
-  font-size: 35px;
+  width: 250px;
+  min-height: 70px;
+  font-size: 20px;
   border-radius: 20px;
   border-style: solid;
   border-color: rgb(41, 38, 38);
@@ -208,7 +215,6 @@
 .title{
   color: rgb(246, 112, 0);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 45px;
   margin-left: 5%;
   
 }
@@ -218,7 +224,7 @@
 .text{
   color: rgb(255, 255, 255);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 28px;
+  font-size: 20px;
   margin-left: 5%;
   margin-right: 5%;
 
@@ -227,7 +233,6 @@
 .jak-to-funguje{
   display: flex;
   flex-direction: column;
-  margin-right: 50px;
   margin-left: 50px;
   margin-bottom: 70px;
   gap: 50px;
@@ -256,7 +261,6 @@
 .jtf-title{
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 30px;
 }
 
 .jtf-text{
@@ -343,8 +347,7 @@
   display: flex;
   justify-content: space-around;
   
-  margin-left: 50px;
-  margin-right: 50px;
+  
   padding-top: 30px;
   padding-bottom: 30px;
   padding-right: 50px;
@@ -377,7 +380,6 @@
 .service-text_tittle{
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 24px;
   margin-left: 27px;
   margin-right: 27px;
   font-weight: bold;
@@ -597,12 +599,14 @@
   }
 
  
+.jtf-krouzek{
+  min-width: 75px;
+  min-height: 75px;
+  font-size: 25px;
+}
+  
 
-  #first-text{
-    font-size: 30px;  
-    margin-left: 10px;
-    margin-right: 10px;
-  }
+
   #main-page{
     padding-top: 50px;
     padding-bottom: 100px;
@@ -713,14 +717,29 @@
 
 
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 500px){
   #logo-div{
     width: 200px;
   }
 
+  .jak-to-funguje{
+    margin: 0;
+    
+  }
+  .jtf-cast{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
   .reference-images{
     grid-template-columns: 350px;
     grid-template-rows: 350px;
+  }
+
+  .network-img{
+    display: none;
   }
 
  
