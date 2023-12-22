@@ -1,23 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
-  var scrollButton = document.querySelector(".scroll-to-top");
 
-  window.addEventListener("scroll", function () {
-      if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
-          scrollButton.style.display = "block";
-      } else {
-          scrollButton.style.display = "none";
-      }
-  });
-});
-
-function scrollToTop() {
-  var currentPosition = document.documentElement.scrollTop || document.body.scrollTop;
-
-  if (currentPosition > 0) {
-      window.requestAnimationFrame(scrollToTop);
-      window.scrollTo(0, currentPosition - currentPosition / 20);
-  }
-}
 
 
 
@@ -47,4 +28,29 @@ document.addEventListener('DOMContentLoaded', function () {
     const targetDiv = document.getElementById('email-form'); // Zde určte ID cílového divu
     targetDiv.scrollIntoView({ behavior: 'smooth' });
   });
+});
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const scrollToDivBtn = document.getElementById('scroll-to-top');
+
+  scrollToDivBtn.addEventListener('click', function () {
+    const targetDiv = document.getElementById('main'); // Zde určte ID cílového divu
+    targetDiv.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  var scrollButton = document.getElementById("scroll-to-top");
+
+  window.onscroll = function () {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+          scrollButton.style.display = "block";
+      } else {
+          scrollButton.style.display = "none";
+      }
+  };
 });
