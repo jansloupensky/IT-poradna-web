@@ -59,6 +59,26 @@
   height: 230px;
 }
 
+
+.smart-home-img2{
+  border-radius: 30px;
+  width: 500px;
+  height: 250px;
+  margin-left: 20px;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  
+  
+}
+
+.smart-home-img2:hover{
+  transition: 0.5s;
+  transform: scale(1.2);
+}
+
+
+
 .smart-home-img{
   border-radius: 30px;
   width: 500px;
