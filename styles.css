@@ -65,11 +65,17 @@
   height: 333px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   
   
 }
+
+.smart-home-img:hover{
+  transition: 0.5s;
+  transform: scale(1.2);
+}
+
 
 .camera-img{
   border-radius: 30px;
@@ -77,9 +83,14 @@
   height: 333px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   
+}
+
+.camera-img:hover{
+  transition: 0.5s;
+  transform: scale(1.2);
 }
 
 
