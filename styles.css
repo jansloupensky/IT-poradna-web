@@ -685,7 +685,7 @@
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 
@@ -698,9 +698,10 @@
 
 .reference-images{
   display: grid;
-  grid-template-columns: 500px;
-  grid-template-rows: 500px;
+  grid-template-columns: 450px;
+  grid-template-rows: 450px;
   gap: 20px;
+  margin-bottom: 100px;
 }
 
 
@@ -908,6 +909,7 @@
   .reference-images{
     grid-template-columns: 350px;
     grid-template-rows: 350px;
+    margin-bottom: 50px;
   }
 
   .network-img{
