@@ -60,25 +60,6 @@
 }
 
 
-.smart-home-img2{
-  border-radius: 30px;
-  width: 500px;
-  height: px;
-  margin-left: 20px;
-  margin-right: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  
-  
-}
-
-.smart-home-img2:hover{
-  transition: 0.5s;
-  transform: scale(1.2);
-}
-
-
-
 .smart-home-img{
   border-radius: 30px;
   width: 500px;
@@ -87,8 +68,8 @@
   margin-right: auto;
   margin-top: 30px;
   margin-bottom: 30px;
-  
-  
+  transition: 0.5s;
+  transform: scale(1);
 }
 
 .smart-home-img:hover{
@@ -388,7 +369,7 @@
   animation-fill-mode: forwards;
 }
 
-.jtf-cast1 {
+/*.jtf-cast1 {
   animation: scaleIn 1s ease-in-out 0s, scaleOut 1s ease-in-out 0s;
 }
 
@@ -398,7 +379,7 @@
 
 .jtf-cast3 {
   animation: scaleIn 1s ease-in-out 3s, scaleOut 1s ease-in-out 4s;
-}
+}*/
 
 
 
@@ -407,6 +388,7 @@
   flex-direction: row;
   align-items: center;
   gap: 30px;
+  margin-left: 5%;
 }
 
 .jtf-title{
@@ -749,6 +731,15 @@ background-color: white;
   
 
   #buttons{
+    display: none;
+  }
+
+  .smart-home-img{
+    height: 200px;
+    width: 260px;
+  }
+
+  #m{
     display: none;
   }
 
